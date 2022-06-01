@@ -10,7 +10,7 @@ import Nav from './components/Nav'
 function App() {
   return (
     <>
-      <Container sx={{ fontFamily: 'Fira Sans' }}>
+      <Container>
         <Nav />
         <MainContent>
           <HeroSection />
