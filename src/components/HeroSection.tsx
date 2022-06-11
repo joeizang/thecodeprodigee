@@ -46,7 +46,12 @@ export default function HeroSection() {
             marginRight: '1rem',
           }}
         >
-          <img src="img/portfolio.png" width={200} height={200} style={{ borderRadius: '50%' }} />
+          <img
+            src="img/portfolio.png"
+            width={200}
+            height={200}
+            style={{ borderRadius: '50%' }}
+          />
         </Box>
         <Box>
           <Box>
@@ -54,7 +59,9 @@ export default function HeroSection() {
             <Typography variant="h4" fontWeight={600}>
               Hi, Joseph Izang here!
             </Typography>
-            <Typography variant="h6">I am a Fullstack Software Developer</Typography>
+            <Typography variant="h6">
+              I am a Fullstack Software Developer
+            </Typography>
             <Typography variant="h6">This is my tech stack:</Typography>
             <Box>
               <Stack direction="row" spacing={5} mt={3}>
@@ -70,7 +77,10 @@ export default function HeroSection() {
                       border: '50%',
                     }}
                   >
-                    <Avatar key={idx} sx={{ width: 64, height: 64, background: '#fff' }}>
+                    <Avatar
+                      key={idx}
+                      sx={{ width: 64, height: 64, background: '#fff' }}
+                    >
                       {component()}
                     </Avatar>
                   </Avatar>
