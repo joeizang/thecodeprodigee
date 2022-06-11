@@ -1,6 +1,6 @@
 import Container from '@mui/material/Container'
 import './App.css'
-import ContactMeSection from './components/ContactMeSection'
+import ContactMeSection from './components/AboutMe'
 import FooterSection from './components/FooterSection'
 import GallerySection from './components/GallerySection'
 import HeroSection from './components/HeroSection'

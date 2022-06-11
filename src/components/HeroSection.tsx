@@ -25,6 +25,9 @@ const avatarComponents = [
 
 const socialsComponents = [GithubAvatar, LinkedInAvatar, TwitterAvatar]
 
+// eslint-disable-next-line quotes
+const text = "Here are my socials, let's get in touch!"
+
 export default function HeroSection() {
   return (
     <>
@@ -67,7 +70,9 @@ export default function HeroSection() {
                       border: '50%',
                     }}
                   >
-                    <Avatar sx={{ width: 64, height: 64, background: '#fff' }}>{component()}</Avatar>
+                    <Avatar key={idx} sx={{ width: 64, height: 64, background: '#fff' }}>
+                      {component()}
+                    </Avatar>
                   </Avatar>
                 ))}
               </Stack>
@@ -75,7 +80,7 @@ export default function HeroSection() {
           </Box>
         </Box>
         <Typography variant="h5" pt={5}>
-          Here are my socials, in case you want to get in touch!
+          {text}
         </Typography>
         <Stack direction="row" spacing={5} mt={2}>
           {socialsComponents.map((component, idx) => component(idx))}
