@@ -10,13 +10,23 @@ export interface GallerySectionCardProps {
   imageUrl: string
 }
 
-export default function GallerySectionCard({ href, appName, description, imageUrl }: GallerySectionCardProps) {
+export default function GallerySectionCard({
+  href,
+  appName,
+  description,
+  imageUrl,
+}: GallerySectionCardProps) {
   return (
     <Box display={'flex'} mt={5}>
       <Paper elevation={3} sx={{ padding: 3, borderRadius: 5 }}>
         <Box display={'flex'}>
           <Button href={href}>
-            <img src={imageUrl} width={150} height={150} style={{ borderRadius: 5 }} />
+            <img
+              src={imageUrl}
+              width={150}
+              height={150}
+              style={{ borderRadius: 5 }}
+            />
           </Button>
           <Box display="flex" flexDirection={'column'}>
             <Typography variant="h4" color={'#1d0532'} ml={3}>

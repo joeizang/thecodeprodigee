@@ -1,7 +1,8 @@
 import Box from '@mui/material/Box'
-import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
-import GallerySectionCard, { GallerySectionCardProps } from './GalleryComponents/GallerySectionCard'
+import GallerySectionCard, {
+  GallerySectionCardProps,
+} from './GalleryComponents/GallerySectionCard'
 
 const appArray: GallerySectionCardProps[] = [
   {
@@ -41,9 +42,15 @@ export default function GallerySection() {
     <>
       <Box component={'section'}>
         <Typography variant="h4" color={'#1D0532'}>
-          Here are projects I have been involved in both Open Source and non Open Source
+          Here are projects I have been involved in both Open Source and non
+          Open Source
         </Typography>
-        <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'} flexWrap={'wrap'}>
+        <Box
+          display={'flex'}
+          justifyContent={'space-between'}
+          alignItems={'center'}
+          flexWrap={'wrap'}
+        >
           {appArray.map((app) => (
             <GallerySectionCard
               description={app.description}

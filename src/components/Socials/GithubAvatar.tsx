@@ -4,7 +4,12 @@ import Button from '@mui/material/Button'
 export default function GithubAvatar(key: any) {
   return (
     <>
-      <Button sx={{ borderRadius: '50%' }} size="small" href="http://github.com/joeizang" key={key}>
+      <Button
+        sx={{ borderRadius: '50%' }}
+        size="small"
+        href="http://github.com/joeizang"
+        key={key}
+      >
         <svg
           width="72px"
           height="72px"

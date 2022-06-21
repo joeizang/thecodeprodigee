@@ -4,7 +4,12 @@ import Button from '@mui/material/Button'
 export default function TwitterAvatar(key: any) {
   return (
     <>
-      <Button sx={{ borderRadius: '50%' }} href="https://twitter.com/Joseph_Izang1" size="small" key={key}>
+      <Button
+        sx={{ borderRadius: '50%' }}
+        href="https://twitter.com/Joseph_Izang1"
+        size="small"
+        key={key}
+      >
         <svg
           width="72px"
           height="72px"
